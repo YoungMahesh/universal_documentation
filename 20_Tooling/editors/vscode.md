@@ -24,6 +24,17 @@ Cntr + p    # search files by name in current directory
 Cntr + P    # open command palette
 ```
 
+### installation
+
+```sh
+# install vscode
+snap install code --classic
+# check if update is available
+snap refresh --list
+# upgrade vscode
+snap refresh code
+```
+
 ### disable syntax warnings
 
 - sometimes to review code, we download it and read it inside vscode without installing dependencies like node_modules, if code is written in typescript or javascript then it leads to syntax warnings in vscode
@@ -36,4 +47,3 @@ Cntr + P    # open command palette
 "typescript.validate.enable": false,
 "javascript.validate.enable": false,
 ```
-
