@@ -34,6 +34,16 @@ gpg -k  # get gpg keys
 #      525A4CCA5D86AE842D9A51C3DF39BF4C371A2ADD
 # rsa3072 - cryptography-algorithm-name
 # 525....ADD - gpg-public-key
+
+# Trust gpg key. 
+# NOTE: you can decrypt/view existing passwords with untrusted key, 
+#   but to store new passwords it is necessary to trust gpg key 
+gpg --edit-key <KEY_ID>
+gpg> trust            
+Your decision? 5
+Do you really want to set this key to ultimate trust? (y/N) y
+gpg> quit
+ 
 sudo apt install pass
 
 # set password-directory, to make this location permanent, add this command
@@ -73,4 +83,3 @@ git clone <pass-repository-url> ~/.password-store  # here we are cloning pass-re
     useradd -m <username>  # create a new user
     passwd <username>  # set password for user
     ```
-
