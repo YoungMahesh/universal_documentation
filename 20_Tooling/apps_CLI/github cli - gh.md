@@ -1,6 +1,7 @@
 ```bash
 gh repo list
 gh repo create # open cli form for creation of github repository
+gh repo create <org>/<repo-name> --private
 gh repo delete OWNER/REPO
 
 # -L == --limit; default limit 30
