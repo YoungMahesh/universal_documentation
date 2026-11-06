@@ -27,8 +27,8 @@ poetry self update
 # python: Invokes the Python interpreter
 # -m: Runs a Python module as a script
 # venv: The built-in Python module for creating virtual environments
-# venv (at end): The name of the directory where the virtual environment will be created
-python -m venv venv
+# .venv (at end): The name of the directory where the virtual environment will be created
+python -m venv .venv
 
 # Activate the virtual environment (On Linux):
 # source <myproject_env>/bin/activate 
