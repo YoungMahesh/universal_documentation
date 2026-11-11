@@ -1,3 +1,11 @@
+View/Edit .env variables:
+
+1. set age key at: `.config/sops/age/keys.txt`
+2. set your preferred editor through `$EDITOR` variable: `echo $EDITOR`
+3. execute: `sops <path-of-encrypted-env-file>`
+
+---
+
 Create age key-pair:
 
 ```bash
@@ -22,7 +30,17 @@ Decrypt file: `sops decrypt secrets/credentials.json.enc > credentials.json`
 
 ### Installation
 
-```bash
+Arch linux:
+
+```sh
+sudo pacman -S sops age
+sops --version
+age --version
+```
+
+Debian/Ubuntu:
+
+```sh
 apt install age
 
 # install sops
